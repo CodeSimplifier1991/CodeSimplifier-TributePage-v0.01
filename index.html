@@ -34,21 +34,21 @@
       </section>
       <!-- END - HEADER -->
 
-      <!-- START - Hero (Page Banner) -->
+      <!-- START - Hero (Page Banner & Logo) -->
       <div id="img-div" class="card banner">
-        <img
-          id="image"
-          src="images/hey_world_logo.png"
-          alt="Code Simplifier Logo"
-        />
+        <picture>
+          <source type="image/webp" srcset="images/mobile_logo@2x.webp 2x" />
+          <source type="image/png" srcset="images/mobile_logo@2x.png 2x" />
+          <img id="image" src="images/ogo.png" alt="Code Simplifier Logo" />
+        </picture>
         <p id="img-caption">Code Simplifier logo since 2019</p>
       </div>
-      <!-- END - Hero (Page Banner)-->
+      <!-- END - Hero (Page Banner & Logo)-->
 
       <!-- START - Page info -->
       <section id="tribute-info">
         <header class="block__header tribute__header">
-          <h2>Code Simplifier Projects:</h2>
+          <h2>Code Simplifier Projects</h2>
         </header>
         <div class="tribute__list">
           <ul class="list">
@@ -64,10 +64,38 @@
               <strong>Shopping List</strong>: e-commerce shop
             </li>
             <li class="list__item">
-              <strong>CampHere Website</strong>: Find an available camp site
+              <strong>CampHere Website</strong>: Find available camp sites
             </li>
           </ul>
         </div>
+
+        <!-- START - Customer Quote -->
+        <blockquote class="quote">
+          <p class="quote__text">
+            Learning how to code with a different approach was what I was
+            looking for.<br />Thank you Code Simplifier
+          </p>
+
+          <footer>
+            <div class="media">
+              <!-- START - Media Image -->
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <!-- END - Media Image -->
+
+              <!-- START - Media Body -->
+              <div class="media__body">
+                <h3 class="media__title quote__author">Adam Eve</h3>
+                <p class="quote__company">Student</p>
+              </div>
+              <!-- END - Media Body -->
+            </div>
+          </footer>
+        </blockquote>
+        <!-- END - Customer Quote -->
       </section>
       <!-- END - Page info -->
 
@@ -79,7 +107,7 @@
             href="https://www.youtube.com/channel/UCov3ojny6sxaRlmOb8jE6Ig"
             id="tribute-link"
             target="_blank"
-            >Check it out</a
+            >Click Here</a
           >
         </p>
       </div>
