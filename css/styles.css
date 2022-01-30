@@ -1,13 +1,12 @@
 /* -------------- GENERAL STYLES ------------ */
-:root {
-}
-
+@import './normalize.css';
 html {
   font-size: 62.5%; /*equal to 10px*/
 }
 
 body {
   font-family: 'inter', Arial, Helvetica, sans-serif;
+  background: rgb(233, 233, 233);
 }
 /* -------------- GENERAL STYLES ------------ */
 
@@ -39,6 +38,7 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   margin-top: 0;
+  margin-bottom: 0;
   opacity: 0.5;
 }
 
@@ -47,3 +47,31 @@ body {
   margin: 0 auto;
 }
 /* -------------- HEADER STYLE ------------ */
+
+/* -------------- BANNER (HERO) STYLE ------------ */
+.card {
+  border-radius: 9px;
+  box-shadow: 0 0 30px 10px #f3f3f3;
+  overflow: hidden;
+  padding: 2rem;
+  background: #fff;
+}
+
+.banner {
+  padding: 3rem;
+}
+
+#image {
+  position: relative;
+  width: 100%; /*Makes the image responsive*/
+  height: 70%;
+}
+
+#img-caption {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 0;
+  opacity: 0.5;
+  text-align: center;
+}
+/* -------------- BANNER (HERO) STYLE ------------ */
