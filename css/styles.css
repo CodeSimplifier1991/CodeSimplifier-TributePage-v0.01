@@ -16,14 +16,6 @@ h2 {
 }
 /* -------------- GENERAL STYLES ------------ */
 
-/* -------------- @MEDIA ------------ */
-@media screen and (min-width: 768px) {
-  /* START - HEADER */
-
-  /* END - HEADER */
-}
-/* -------------- @MEDIA ------------ */
-
 /* -------------- HEADER STYLE ------------ */
 .block {
   padding: 6rem;
@@ -53,6 +45,11 @@ h2 {
 .container {
   max-width: 570px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .block__header {
+    font-size: 1.8rem;
+  }
 }
 /* -------------- HEADER STYLE ------------ */
 
@@ -95,21 +92,25 @@ h2 {
 
 .tribute__list {
   max-width: 570px;
-  width: 100%;
   margin: 0 auto;
+  width: 50%;
 }
 
 .list {
   margin-left: 0;
   line-height: 40px;
   font-size: 1.9rem;
-  white-space: nowrap;
 }
 
 .list__item {
   white-space: nowrap;
+  text-align: left;
 }
 
+.list__item > p {
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
 /* Quotes */
 .icon {
   width: 40px;
@@ -155,15 +156,15 @@ h2 {
 
 /* -------------- EXTERNAL LINK STYLE ------------ */
 .tribute-link {
-  text-align: center;
   font-size: 1.7rem;
-  white-space: nowrap;
   margin: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
 }
 #tribute-link {
-  text-decoration: none;
   font-size: 1.9rem;
   font-weight: bold;
+  text-decoration: none;
   transition: color 0.3s;
 }
 
